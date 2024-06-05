@@ -19,6 +19,9 @@
 # misc
 .DS_Store
 *.pem
+.env.*
+.vscode
+.vscode/*
 
 # debug
 npm-debug.log*
