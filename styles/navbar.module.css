@@ -1,0 +1,16 @@
+.navbar {
+    padding-top: 2em;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.content li {
+    list-style-type: none;
+    width: 4em;
+    margin-right: 2em;
+    font-size: 18px;
+}
