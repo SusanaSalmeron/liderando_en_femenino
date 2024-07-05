@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  src: rurl('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+  font-weight: 400, 700;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;

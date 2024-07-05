@@ -1,0 +1,128 @@
+.beatriz,
+.experience,
+.studies,
+.technologie {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    background: #DE744C;
+    border-radius: 5px;
+    font-family: "Roboto Mono";
+    font-size: clamp(18px, 4vw, 40px);
+    width: 89%;
+    padding: 0 0.2em 1em 0.2em;
+    margin: 1em 2.5em 0 1em;
+    box-shadow: 10px 10px 10px lightgrey;
+}
+
+.technologie {
+    background-image: url('/images/tech.png');
+}
+
+.experience,
+.technologie {
+    width: 86%;
+    margin: 1em 0 0 2.8em;
+}
+
+.beatrizContainer,
+.vieseContainer,
+.flagsContainer {
+    width: 80%;
+    grid-column: 1;
+    grid-row: 1 / 3
+}
+
+.pictureContainer {
+    width: 10%
+}
+
+.beatriz img,
+.experience img,
+.studies img {
+    width: 100%;
+}
+
+.mindshakerContainer,
+.experienceContainer,
+.studiesContainer,
+.techContainer {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 1em 1em 1em 0;
+}
+
+
+.mindshakerContainer h1,
+.experienceContainer h1,
+.studiesContainer h1,
+.techContainer h1 {
+    text-transform: uppercase;
+    font-size: clamp(28px, 5vw, 70px);
+    text-shadow: 3px 3px goldenrod;
+    text-decoration: underline;
+    background-image: linear-gradient(10deg, black, goldenrod);
+    background-clip: text;
+    color: transparent;
+}
+
+.studiesContainer h1 {
+    font-size: 24px;
+}
+
+
+.text {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    padding-right: 0.5em;
+}
+
+
+.textTech {
+    grid-column: 1 / 3;
+    margin: 0 1em;
+    padding-right: 1em;
+}
+
+
+.text p,
+.textTech {
+    width: 100%;
+    color: white;
+}
+
+
+@media (min-width:600px) {
+
+    .mindshakerContainer,
+    .experienceContainer {
+        width: 80%;
+    }
+}
+
+@media (min-width:800px) {
+
+    .mindshakerContainer,
+    .experienceContainer,
+    .techContainer {
+        width: 100%;
+    }
+
+    .pictureContainer {
+        width: 100%;
+    }
+
+    .techContainer {
+        margin-bottom: 1.5em;
+    }
+
+    .techContainer img {
+        height: 150%;
+        margin-left: -2em
+    }
+}
+
+@media (min-width:1000px) {}
+
+@media(min-width:1200px) {}

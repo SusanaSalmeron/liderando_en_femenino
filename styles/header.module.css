@@ -4,6 +4,7 @@
     justify-content: space-between;
 }
 
-.header image {
-    width: 30%;
+.header img {
+    width: clamp(70%, 2vw, 100%);
+    ;
 }

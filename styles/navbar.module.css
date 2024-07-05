@@ -1,16 +1,21 @@
 .navbar {
-    padding-top: 2em;
+    padding-top: 3em;
 }
 
 .content {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    justify-content: baseline;
 }
 
 .content li {
     list-style-type: none;
-    width: 4em;
+    width: 2em;
     margin-right: 2em;
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 30px);
+}
+
+.content li:last-child {
+    margin-right: 4em;
 }
