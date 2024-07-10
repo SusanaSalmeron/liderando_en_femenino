@@ -2,6 +2,7 @@ import Image from "next/image";
 import style from "./page.module.css";
 import Header from "@/components/Header";
 import Card from "@/components/Card";
+import ColabInfo from "@/components/ColabInfo";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
           titleContainerClass={style.techContainer}
           textContainerClass={style.textTech}
         />
+        <ColabInfo />
       </main>
     </>
   );

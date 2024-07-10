@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    margin-top: 3em;
+    min-height: 215px;
+    background:
+        linear-gradient(rgb(106, 212, 247), transparent),
+        linear-gradient(to top left, lightgrey, transparent),
+        linear-gradient(to top right, red, transparent);
+    background-blend-mode: screen;
+}
+
+.container h4 {
+    font-size: clamp(14px, 3vw, 40px);
+    text-align: center;
+    color: #DEB13C;
+    padding-top: 1em;
+    text-shadow: 2px 2px rgb(99, 96, 96);
+}
+
+.container .pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}

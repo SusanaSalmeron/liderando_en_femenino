@@ -1,6 +1,5 @@
 import { FC } from "react";
 import style from '../../styles/card.module.css'
-import Image from "next/image";
 
 
 interface CardProps {
