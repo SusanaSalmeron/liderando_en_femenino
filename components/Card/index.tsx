@@ -8,7 +8,7 @@ interface CardProps {
     cardImage: string,
     cardAlt: string,
     cardText: string,
-    title: string,
+    title: any,
     titleContainerClass: string,
     textContainerClass: string,
 }
@@ -28,11 +28,8 @@ const Card: FC<CardProps> = ({ imageContainerClass, cardClass, cardImage, cardAl
                 </div>
                 <div className={textContainerClass}>
                     <p className={style.paragraph}>{cardText}</p>
-
                 </div>
             </div>
-
-
         </>
     )
 }

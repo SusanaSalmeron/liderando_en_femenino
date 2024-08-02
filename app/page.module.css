@@ -1,7 +1,8 @@
 .beatriz,
 .experience,
 .studies,
-.technologie {
+.technologie,
+.coach {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     background: #DE744C;
@@ -24,6 +25,7 @@
     margin: 1em 0 0 2.8em;
 }
 
+
 .beatrizContainer,
 .vieseContainer,
 .flagsContainer {
@@ -34,6 +36,19 @@
 
 .pictureContainer {
     width: 10%
+}
+
+.photoContainer {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2 / 3
+}
+
+.photoContainer img {
+    width: 90%;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 .beatriz img,
@@ -52,11 +67,11 @@
     margin: 1em 1em 1em 0;
 }
 
-
 .mindshakerContainer h1,
 .experienceContainer h1,
 .studiesContainer h1,
-.techContainer h1 {
+.techContainer h1,
+.coachContainer h1 {
     text-transform: uppercase;
     font-size: clamp(28px, 5vw, 70px);
     text-shadow: 3px 3px goldenrod;
@@ -70,6 +85,22 @@
     font-size: 24px;
 }
 
+.coachContainer {
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+.coachContainer :first-child {
+    margin-top: 1.5em;
+}
+
+.coachContainer h1 {
+    margin-left: 0.2em;
+    margin-top: 0.5em;
+    padding-right: 0.2em;
+    font-size: clamp(20px, 4vw, 70px);
+    text-align: center;
+}
 
 .text {
     width: 100%;
@@ -78,18 +109,67 @@
     padding-right: 0.5em;
 }
 
-
 .textTech {
     grid-column: 1 / 3;
     margin: 0 1em;
     padding-right: 1em;
 }
 
+.textCoach {
+    display: block;
+    grid-column: 1 / 3;
+    margin: 0 1em;
+    padding-right: 1em;
+    font-size: clamp(12px, 4vw, 40px);
+}
 
 .text p,
-.textTech {
+.textTech,
+.textCoach {
     width: 100%;
     color: white;
+}
+
+.container h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2em 0;
+    font-size: clamp(18px, 3vw, 40px);
+    text-align: center;
+    color: #DEB13C;
+    text-shadow: 2px 2px rgb(99, 96, 96);
+}
+
+.definition p,
+.transformation p,
+.implementation p {
+    padding: 0 1em;
+
+}
+
+.defContainer,
+.transContainer,
+.impleContainer {
+    background: #DE744C;
+    border-radius: 5px;
+    font-family: "Roboto Mono";
+    font-size: clamp(12px, 4vw, 40px);
+    width: 85%;
+    padding: 0 0.2em 1em 0.2em;
+    margin: 1em 2.5em 0 1em;
+    box-shadow: 10px 10px 10px lightgrey;
+}
+
+.defContainer h4,
+.transContainer h4,
+.impleContainer h4 {
+    padding: 1em;
+    color: white;
+}
+
+.defContainer,
+.impleContainer {
+    margin-left: 2em;
 }
 
 
