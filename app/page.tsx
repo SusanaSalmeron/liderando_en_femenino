@@ -1,12 +1,21 @@
+'use client'
 import style from "./page.module.css";
 import Header from "@/components/Header";
 import Card from "@/components/Card";
 import ColabInfo from "@/components/ColabInfo";
 import InfoCard from "@/components/infoCard";
+import HaveSeen from "@/components/HaveSeen";
+import { useEffect, useState } from "react";
 
 const titles = [<h1 key="1">Coaching</h1>, <h1 key="2">escritora</h1>, <h1 key="3">conferenciante</h1>, <h1 key="4">& ponente</h1>]
 
 export default function Home() {
+  const [h1titles, seth1Titles] = useState(false)
+
+  useEffect(() => {
+    seth1Titles(true)
+  }, [])
+
   return (
     <>
       <Header />
@@ -58,7 +67,7 @@ export default function Home() {
           cardAlt="Podcast"
           cardText="Formado y certificado como coach por la Federación  Internacional de Coaching desde 2012 y en 2014 en enfoque sistémico para  retos ejecutivos. Profesor colaborador ocasional de Liderazgo y  habilidades directivas en el Centro de Liderazgo y Tecnología de la  Universidad Politécnica de Madrid.
 Conferenciante y ponente en  empresas, universidades y escuelas de negocios. 2023 autor publicado  («¿Síndrome de la impostora? Liderando en femenino») por Editorial  Universitaria Ramón Areces."
-          title={titles.map(title => title)}
+          title={h1titles ? titles.map(title => title) : null}
           titleContainerClass={style.coachContainer}
           textContainerClass={style.textCoach}
         />
@@ -90,6 +99,7 @@ empleados."
           cardContainer={style.impleContainer}
           textClass={style.implementation}
         />
+        <HaveSeen />
       </main>
     </>
   );
